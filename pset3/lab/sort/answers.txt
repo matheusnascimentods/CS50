@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Este é o segundo programa mais rapido, logo é o bubble.
+
+sort2 uses: Merge Sort
+
+How do you know?: Este é o programa mais rapido, logo é o merge.
+
+sort3 uses: Selection Sort
+
+How do you know?: Este é o programa mais lento, logo é o selection.
