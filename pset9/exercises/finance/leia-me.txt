@@ -1,0 +1,12 @@
+Comandos para rodar:
+
+export API_KEY=pk_243a581ab9634b1db8750ad4974222c3
+flask run
+
+Perfis disponiveis:
+
+username: paolo maldini
+password: ITALIA
+
+username: sergio ramos
+password: vasco

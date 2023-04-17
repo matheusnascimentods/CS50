@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for transaction in transactions %}
+            <tr>
+                <td>{{ transaction['symbol'] }}</td>
+                <td>{{ transaction['name'] }}</td>
+                <td>{{ transaction['SUM(shares)'] }}</td>
+                <td>{{ usd(transaction['price']) }}</td>
+                <td>{{ usd(transaction['price'] * transaction['SUM(shares)']) }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Cash: {{ usd(cash) }}</td>
+        </tr>
+        <tr>
+            <td>Total: {{ usd(total) }}</td>
+        </tr>
+    </tfoot>
+</table>
+{% endblock %}
