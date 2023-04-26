@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    background-color: #003566;
+    padding: 20px;
+}
+.navbar-brand {
+    margin-left: 5px;
+    font-weight: 800;
+}
+.navbar-brand span {
+    display: flex;
+}
+.navbar-brand, .nav-link {
+	color: #ffffff;
+}
+.nav-link {
+    font-weight: 400;
+    font-size: 14px;
+}
+.navbar-brand:hover, .nav-link:hover {
+	color: #ffffff;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+main .form-control
+{
+    /* Center form controls */
+    display: inline-block;
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btn {
+    background-color: #003566;
+    color: #ffffff;
+    width: 100%;
+    transition: 1s all;
+}
+.btn:hover {
+    background-color: #012342;
+    color: #ffffff;
+    transition: 1s all;
+}
+.form-title {
+    font-weight: 800;
+    font-size: 20px
+}
+.small-card {
+    margin: 5px;
+    width: 200px;
+    padding: 10px;
+}
+.big-card img{
+    height: 100%;
+    width: auto;
+}
+.card-title {
+    font-weight: 600;
+    font-size: 18px;
+}
+.big-card .card-text {
+    font-size: 14px;
+}
+.big-card .card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

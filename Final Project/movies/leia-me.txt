@@ -1,0 +1,16 @@
+Comandos para rodar:
+
+export API_KEY=59645b62149874f941a75e64a4517062
+flask run
+
+Perfis disponiveis:
+
+username: sergio ramos
+password: real
+
+username: pec
+password: vasco
+
+Rodar banco de dados:
+
+sqlite3 movies.db

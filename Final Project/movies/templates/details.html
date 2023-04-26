@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Details
+{% endblock %}
+
+{% block main %}
+    <div class="card mb-3 big-card" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="https://image.tmdb.org/t/p/original{{ movie['poster'] }}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h1 class="card-title">{{ movie['title'] }}</h1>
+                    <p class="card-text">{{ movie['description'] }}</p>
+                    <a href="/remove?id={{ movie['id'] }}" class="btn">Remove from list</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

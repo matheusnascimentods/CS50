@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    {% for movie in movies %}
+    <div class="card small-card">
+        <img src={{ movie['poster'] }} class="card-img-top" alt="movie poster">
+        <div class="card-body">
+          <p class="card-text">{{ movie['title'] }}</p>
+        </div>
+      </div>
+    {% endfor %}
+{% endblock %}
